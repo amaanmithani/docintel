@@ -1,2 +1,3 @@
-def hello() -> str:
-    return "Hello from docintel!"
+"""docintel: table structure extraction and evaluation."""
+
+__version__ = "0.1.0"
