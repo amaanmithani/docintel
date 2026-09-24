@@ -1,0 +1,210 @@
+{
+ "config": {
+  "dataset": "hf://datasets/apoidea/pubtabnet-html/data/validation-00000-of-00001.parquet",
+  "parquet_sha256": "b09ed69c1e03ebfcf228c58bf41ed5e560d29a194971e9aff107e07ee6048037",
+  "split": "validation",
+  "n_total": 9115,
+  "n_eval": 300,
+  "n_calibration": 100,
+  "seed": 13,
+  "model": "tatr:table-transformer-structure-recognition-v1.1-all",
+  "text_source": "PubTabNet cell text boxes (oracle OCR)",
+  "postprocess": {
+   "row_threshold": 0.7,
+   "col_threshold": 0.7,
+   "span_threshold": 0.7,
+   "header_threshold": 0.7,
+   "split_header_rowspans": true
+  }
+ },
+ "calibration": {
+  "best": {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 0.7,
+    "header_threshold": 0.7,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9383123928178972
+  }
+ },
+ "summary": {
+  "n_tables": 300,
+  "overall": {
+   "tatr": {
+    "teds": {
+     "mean": 0.9204241533333334,
+     "lo": 0.9059324205833332,
+     "hi": 0.9335522679166665,
+     "n": 300
+    },
+    "teds_s": {
+     "mean": 0.9279507899999999,
+     "lo": 0.9149782111666668,
+     "hi": 0.9399160424166667,
+     "n": 300
+    }
+   },
+   "textbox_cluster": {
+    "teds": {
+     "mean": 0.7534267233333334,
+     "lo": 0.7254373105,
+     "hi": 0.7801928657499999,
+     "n": 300
+    },
+    "teds_s": {
+     "mean": 0.7929520533333334,
+     "lo": 0.7698434774166667,
+     "hi": 0.8148805886666666,
+     "n": 300
+    }
+   },
+   "projection": {
+    "teds": {
+     "mean": 0.6178287433333334,
+     "lo": 0.5853143585,
+     "hi": 0.6497709190833333,
+     "n": 300
+    },
+    "teds_s": {
+     "mean": 0.6897975700000001,
+     "lo": 0.6635337468333333,
+     "hi": 0.7150262632500001,
+     "n": 300
+    }
+   }
+  },
+  "paired_differences": {
+   "tatr_minus_textbox_cluster": {
+    "teds": {
+     "mean": 0.16699743,
+     "lo": 0.14222934258333336,
+     "hi": 0.1924438605833333,
+     "n": 300
+    },
+    "teds_s": {
+     "mean": 0.13499873666666665,
+     "lo": 0.11504583791666664,
+     "hi": 0.15582183941666664,
+     "n": 300
+    }
+   },
+   "tatr_minus_projection": {
+    "teds": {
+     "mean": 0.30259541,
+     "lo": 0.270906547,
+     "hi": 0.3345537069166667,
+     "n": 300
+    },
+    "teds_s": {
+     "mean": 0.23815322,
+     "lo": 0.21219265633333334,
+     "hi": 0.264560439,
+     "n": 300
+    }
+   }
+  },
+  "by_category": {
+   "has_spans=true": {
+    "n": 142,
+    "tatr": {
+     "mean": 0.8774441338028168,
+     "lo": 0.857585636971831,
+     "hi": 0.8961832024647886,
+     "n": 142
+    }
+   },
+   "has_spans=false": {
+    "n": 158,
+    "tatr": {
+     "mean": 0.9733428481012657,
+     "lo": 0.9605154382911394,
+     "hi": 0.984262022943038,
+     "n": 158
+    }
+   },
+   "multirow_header=true": {
+    "n": 86,
+    "tatr": {
+     "mean": 0.9079104069767441,
+     "lo": 0.8853237979651161,
+     "hi": 0.9286447395348838,
+     "n": 86
+    }
+   },
+   "multirow_header=false": {
+    "n": 214,
+    "tatr": {
+     "mean": 0.9360044018691588,
+     "lo": 0.9199470185747664,
+     "hi": 0.9506414453271029,
+     "n": 214
+    }
+   },
+   "no_vertical_rules=true": {
+    "n": 293,
+    "tatr": {
+     "mean": 0.9292660341296928,
+     "lo": 0.9162736564846418,
+     "hi": 0.9413742866040958,
+     "n": 293
+    }
+   },
+   "no_vertical_rules=false": {
+    "n": 7,
+    "tatr": {
+     "mean": 0.8728984285714285,
+     "lo": 0.8003361428571428,
+     "hi": 0.9464287142857143,
+     "n": 7
+    }
+   },
+   "large=true": {
+    "n": 73,
+    "tatr": {
+     "mean": 0.9186860410958906,
+     "lo": 0.8933184181506849,
+     "hi": 0.9409290869863013,
+     "n": 73
+    }
+   },
+   "large=false": {
+    "n": 227,
+    "tatr": {
+     "mean": 0.9309302026431717,
+     "lo": 0.9158012175110131,
+     "hi": 0.9452681362334802,
+     "n": 227
+    }
+   }
+  },
+  "failures": {
+   "definition": "tatr TEDS-Struct < 0.9",
+   "n": 86,
+   "error_tags": {
+    "span_count_wrong": 73,
+    "row_count_wrong": 22,
+    "header_rows_wrong": 21,
+    "col_count_wrong": 4,
+    "counts_match_but_layout_wrong": 2
+   },
+   "category_counts_among_failures": {
+    "has_spans": 70,
+    "multirow_header": 31,
+    "no_vertical_rules": 82,
+    "large": 26
+   },
+   "category_counts_all": {
+    "has_spans": 142,
+    "multirow_header": 86,
+    "no_vertical_rules": 293,
+    "large": 73
+   }
+  },
+  "model_seconds_per_table": {
+   "median": 0.4924,
+   "mean": 0.7198513333333333
+  }
+ }
+}

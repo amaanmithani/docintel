@@ -1,0 +1,145 @@
+{
+ "task": "question->answer linking with gold entities and labels",
+ "calibration": {
+  "split": "train",
+  "n_forms": 149,
+  "best": {
+   "above_weight": 3.0,
+   "max_distance": 400.0
+  },
+  "grid": [
+   {
+    "above_weight": 0.5,
+    "max_distance": 100.0,
+    "f1": 0.6900143678160919
+   },
+   {
+    "above_weight": 0.5,
+    "max_distance": 200.0,
+    "f1": 0.7199029967088171
+   },
+   {
+    "above_weight": 0.5,
+    "max_distance": 400.0,
+    "f1": 0.7225939269171384
+   },
+   {
+    "above_weight": 0.5,
+    "max_distance": 800.0,
+    "f1": 0.7223460812896587
+   },
+   {
+    "above_weight": 1.0,
+    "max_distance": 100.0,
+    "f1": 0.7066269545793
+   },
+   {
+    "above_weight": 1.0,
+    "max_distance": 200.0,
+    "f1": 0.757070086070613
+   },
+   {
+    "above_weight": 1.0,
+    "max_distance": 400.0,
+    "f1": 0.7650405102568523
+   },
+   {
+    "above_weight": 1.0,
+    "max_distance": 800.0,
+    "f1": 0.7645343851826444
+   },
+   {
+    "above_weight": 1.5,
+    "max_distance": 100.0,
+    "f1": 0.7070245573957737
+   },
+   {
+    "above_weight": 1.5,
+    "max_distance": 200.0,
+    "f1": 0.7708741320989851
+   },
+   {
+    "above_weight": 1.5,
+    "max_distance": 400.0,
+    "f1": 0.7838726423256618
+   },
+   {
+    "above_weight": 1.5,
+    "max_distance": 800.0,
+    "f1": 0.7830869714678584
+   },
+   {
+    "above_weight": 2.0,
+    "max_distance": 100.0,
+    "f1": 0.7050637804406648
+   },
+   {
+    "above_weight": 2.0,
+    "max_distance": 200.0,
+    "f1": 0.7710061305445366
+   },
+   {
+    "above_weight": 2.0,
+    "max_distance": 400.0,
+    "f1": 0.795339940879847
+   },
+   {
+    "above_weight": 2.0,
+    "max_distance": 800.0,
+    "f1": 0.7930380837497846
+   },
+   {
+    "above_weight": 3.0,
+    "max_distance": 100.0,
+    "f1": 0.6965803518481912
+   },
+   {
+    "above_weight": 3.0,
+    "max_distance": 200.0,
+    "f1": 0.7711506698476784
+   },
+   {
+    "above_weight": 3.0,
+    "max_distance": 400.0,
+    "f1": 0.8066046021429826
+   },
+   {
+    "above_weight": 3.0,
+    "max_distance": 800.0,
+    "f1": 0.8053969901401141
+   }
+  ]
+ },
+ "test": {
+  "n_forms": 50,
+  "n_gold_links": 837,
+  "geometric": {
+   "precision": 0.9424836601307189,
+   "recall": 0.8614097968936678,
+   "f1": 0.9001248439450686,
+   "tp": 721,
+   "n_pred": 765,
+   "n_gold": 837,
+   "f1_ci": {
+    "value": 0.9001248439450686,
+    "lo": 0.8670207985988957,
+    "hi": 0.9297873909496013,
+    "n": 50
+   }
+  },
+  "nearest_center_baseline": {
+   "precision": 0.5602923264311814,
+   "recall": 0.5495818399044206,
+   "f1": 0.5548854041013269,
+   "tp": 460,
+   "n_pred": 821,
+   "n_gold": 837,
+   "f1_ci": {
+    "value": 0.5548854041013269,
+    "lo": 0.4669653231401605,
+    "hi": 0.634683597903745,
+    "n": 50
+   }
+  }
+ }
+}

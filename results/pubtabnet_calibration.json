@@ -1,0 +1,358 @@
+{
+ "seed": 13,
+ "indices": [
+  26,
+  28,
+  34,
+  69,
+  119,
+  272,
+  301,
+  424,
+  432,
+  530,
+  602,
+  753,
+  1042,
+  1135,
+  1160,
+  1186,
+  1291,
+  1389,
+  1453,
+  1527,
+  1560,
+  1564,
+  1635,
+  1899,
+  2053,
+  2243,
+  2266,
+  2276,
+  2308,
+  2395,
+  2442,
+  2474,
+  2579,
+  2633,
+  2847,
+  2900,
+  3049,
+  3171,
+  3257,
+  3263,
+  3308,
+  3643,
+  3652,
+  3826,
+  3863,
+  4227,
+  4443,
+  4516,
+  4623,
+  4754,
+  4766,
+  4887,
+  4967,
+  5018,
+  5087,
+  5119,
+  5215,
+  5279,
+  5333,
+  5380,
+  5444,
+  5504,
+  5826,
+  5912,
+  5983,
+  6069,
+  6138,
+  6217,
+  6249,
+  6318,
+  6447,
+  6515,
+  6531,
+  6603,
+  6759,
+  6815,
+  6830,
+  6839,
+  6921,
+  7081,
+  7217,
+  7307,
+  7317,
+  7352,
+  7592,
+  7593,
+  7659,
+  7880,
+  7941,
+  8131,
+  8132,
+  8152,
+  8169,
+  8274,
+  8322,
+  8446,
+  8537,
+  8677,
+  8926,
+  9018
+ ],
+ "n": 100,
+ "grid": [
+  {
+   "config": {
+    "row_threshold": 0.3,
+    "col_threshold": 0.3,
+    "span_threshold": 0.3,
+    "header_threshold": 0.3,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9258767844050275
+  },
+  {
+   "config": {
+    "row_threshold": 0.3,
+    "col_threshold": 0.3,
+    "span_threshold": 0.3,
+    "header_threshold": 0.3,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9323664459712984
+  },
+  {
+   "config": {
+    "row_threshold": 0.3,
+    "col_threshold": 0.3,
+    "span_threshold": 0.5,
+    "header_threshold": 0.3,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9301244012779257
+  },
+  {
+   "config": {
+    "row_threshold": 0.3,
+    "col_threshold": 0.3,
+    "span_threshold": 0.5,
+    "header_threshold": 0.3,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9351870591984897
+  },
+  {
+   "config": {
+    "row_threshold": 0.3,
+    "col_threshold": 0.3,
+    "span_threshold": 0.7,
+    "header_threshold": 0.3,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9319493987105801
+  },
+  {
+   "config": {
+    "row_threshold": 0.3,
+    "col_threshold": 0.3,
+    "span_threshold": 0.7,
+    "header_threshold": 0.3,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9364703042938598
+  },
+  {
+   "config": {
+    "row_threshold": 0.3,
+    "col_threshold": 0.3,
+    "span_threshold": 1.01,
+    "header_threshold": 0.3,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9172723078446166
+  },
+  {
+   "config": {
+    "row_threshold": 0.3,
+    "col_threshold": 0.3,
+    "span_threshold": 1.01,
+    "header_threshold": 0.3,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9172723078446166
+  },
+  {
+   "config": {
+    "row_threshold": 0.5,
+    "col_threshold": 0.5,
+    "span_threshold": 0.3,
+    "header_threshold": 0.5,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9258767844050275
+  },
+  {
+   "config": {
+    "row_threshold": 0.5,
+    "col_threshold": 0.5,
+    "span_threshold": 0.3,
+    "header_threshold": 0.5,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9323664459712984
+  },
+  {
+   "config": {
+    "row_threshold": 0.5,
+    "col_threshold": 0.5,
+    "span_threshold": 0.5,
+    "header_threshold": 0.5,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9301244012779257
+  },
+  {
+   "config": {
+    "row_threshold": 0.5,
+    "col_threshold": 0.5,
+    "span_threshold": 0.5,
+    "header_threshold": 0.5,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9351870591984897
+  },
+  {
+   "config": {
+    "row_threshold": 0.5,
+    "col_threshold": 0.5,
+    "span_threshold": 0.7,
+    "header_threshold": 0.5,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9319493987105801
+  },
+  {
+   "config": {
+    "row_threshold": 0.5,
+    "col_threshold": 0.5,
+    "span_threshold": 0.7,
+    "header_threshold": 0.5,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9364703042938598
+  },
+  {
+   "config": {
+    "row_threshold": 0.5,
+    "col_threshold": 0.5,
+    "span_threshold": 1.01,
+    "header_threshold": 0.5,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9172723078446166
+  },
+  {
+   "config": {
+    "row_threshold": 0.5,
+    "col_threshold": 0.5,
+    "span_threshold": 1.01,
+    "header_threshold": 0.5,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9172723078446166
+  },
+  {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 0.3,
+    "header_threshold": 0.7,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9287599123778375
+  },
+  {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 0.3,
+    "header_threshold": 0.7,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9352495739441083
+  },
+  {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 0.5,
+    "header_threshold": 0.7,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9329244519774911
+  },
+  {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 0.5,
+    "header_threshold": 0.7,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.937987109898055
+  },
+  {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 0.7,
+    "header_threshold": 0.7,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.9337914872346176
+  },
+  {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 0.7,
+    "header_threshold": 0.7,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.9383123928178972
+  },
+  {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 1.01,
+    "header_threshold": 0.7,
+    "split_header_rowspans": false
+   },
+   "teds_s": 0.919799308593489
+  },
+  {
+   "config": {
+    "row_threshold": 0.7,
+    "col_threshold": 0.7,
+    "span_threshold": 1.01,
+    "header_threshold": 0.7,
+    "split_header_rowspans": true
+   },
+   "teds_s": 0.919799308593489
+  }
+ ],
+ "best": {
+  "config": {
+   "row_threshold": 0.7,
+   "col_threshold": 0.7,
+   "span_threshold": 0.7,
+   "header_threshold": 0.7,
+   "split_header_rowspans": true
+  },
+  "teds_s": 0.9383123928178972
+ }
+}
