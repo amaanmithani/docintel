@@ -1,5 +1,7 @@
 # docintel
 
+> **Credits.** Built by Amaan Mithani with Claude (Anthropic) as the AI coding assistant.
+
 Table structure extraction from document images, measured honestly on PubTabNet. There's also a small form key-value linking module tested on FUNSD.
 
 ```
