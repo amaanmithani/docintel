@@ -12,6 +12,16 @@ table image ──► Table Transformer (TATR v1.1, CPU) ──► rows / column
                                                   HTML  /  CSV  /  JSON
 ```
 
+## See it running
+
+![Input table image next to the rendered HTML that docintel extracted from it](docs/img/extract-html.png)
+
+Left: the example PubTabNet image. Right: the HTML printed by `uv run docintel extract examples/PMC1064865_002_00.png --html` on CPU (TATR v1.1-all + Tesseract), rendered unedited in a browser; only the borders and header shading come from the viewing page's CSS. Note the real OCR slips: `±` read as `+`, grade `B` read as `8`.
+
+![Terminal output of docintel extract --html](docs/img/extract-cli.svg)
+
+The same run in the terminal: the HTML on stdout and the grid summary on stderr.
+
 ## What it does
 
 - **`docintel extract table.png --html|--csv|--json`** takes a cropped table image and returns its
